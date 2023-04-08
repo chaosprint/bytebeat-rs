@@ -1,5 +1,11 @@
 ## bytebeat-rs
 
+
+
+https://user-images.githubusercontent.com/35621141/230710706-76a2a4a8-a4e9-4819-b755-802103b76ba4.mp4
+
+
+
 ### usage
 
 installation:
