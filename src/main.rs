@@ -104,7 +104,7 @@ where
     let mut next_value = move || {
         let result = ((t));
         t += 1;
-        (result % 255) as f32 / 255.0 * 2.0 - 1.0
+        (result % 256) as f32 / 255.0 * 2.0 - 1.0
     };
 
     let err_fn = |err| eprintln!("an error occurred on stream: {}", err);

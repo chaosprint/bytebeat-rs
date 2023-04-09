@@ -29,9 +29,9 @@ where `((t))` will be replaced by the rules you define:
 
 for example `(t>>7)*(t>>9)|t>>6` 
 
-the output will be a float: `(result % 255) as f32 / 255.0 * 2.0 - 1.0`
+the output will be a float: `(result % 256) as f32 / 255.0 * 2.0 - 1.0`
 
-what kind of tune it will make depends on the your rules:
+what kind of tune it will make depends on the rules you define.
 
 ### contribution
 
