@@ -1,6 +1,6 @@
 ## bytebeat-rs
 
-**WARNING** ⚠️ Lower your volumn when play the video below❗️
+**WARNING** ⚠️ Lower your volume when play the video below❗️
 
 https://user-images.githubusercontent.com/35621141/230710706-76a2a4a8-a4e9-4819-b755-802103b76ba4.mp4
 
