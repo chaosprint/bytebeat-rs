@@ -13,7 +13,7 @@ installation:
 then in your terminal:
 
 ```sh
-bytebeat "(t>>7)*(t>>9)|t>>6"
+bytebeat "((t >> 10) & 42) * t"
 ```
 
 ### basic idea on bytebeat
@@ -21,13 +21,15 @@ bytebeat "(t>>7)*(t>>9)|t>>6"
 you have a `t` that keeps increamenting from 0, 1, 2, to u32::MAX.
 
 in the source code:
+
 ```
 let result = ((t));
 t += 1;
 ```
+
 where `((t))` will be replaced by the rules you define:
 
-for example `(t>>7)*(t>>9)|t>>6` 
+for example `((t >> 10) & 42) * t`
 
 the output will be a float: `(result % 256) as f32 / 255.0 * 2.0 - 1.0`
 

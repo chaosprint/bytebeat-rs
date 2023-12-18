@@ -1,14 +1,8 @@
 [package]
 name = "bytebeat"
-version = "0.2.1"
+version = "0.3.0"
 edition = "2021"
-keywords = [
-	"audio",
-    "music",
-	"DSP",
-	"synth",
-    "synthesizer"
-]
+keywords = ["audio", "music", "DSP", "synth", "synthesizer"]
 
 license-file = "LICENSE"
 description = "Bytebeat written in Rust."
@@ -18,17 +12,17 @@ authors = ["Qichao Lan <chaosprint@gmail.com>"]
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-# cpal = "0.15.2"
-# anyhow = "1.0.70"
-# clap = { version = "4.1.8", features = ["derive"] }
+cpal = "0.15.2"
+anyhow = "1.0.70"
+clap = { version = "4.1.8", features = ["derive"] }
 tempfile = "3.5.0"
 
 [features]
 default = []
-# jack = ["cpal/jack"]
+jack = ["cpal/jack"]
 
 [profile.release]
-opt-level = 'z'     # Optimize for size.
-lto = true          # Enable Link Time Optimization
-codegen-units = 1   # Reduce number of codegen units to increase optimizations.
-panic = 'abort'     # Abort on panic
+opt-level = 'z'   # Optimize for size.
+lto = true        # Enable Link Time Optimization
+codegen-units = 1 # Reduce number of codegen units to increase optimizations.
+panic = 'abort'   # Abort on panic
