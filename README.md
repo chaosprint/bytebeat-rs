@@ -16,6 +16,12 @@ then in your terminal:
 bytebeat "((t >> 10) & 42) * t"
 ```
 
+try different sample rate:
+
+```sh
+bytebeat "((t >> 10) & 42) * t" --sr 8000
+```
+
 ### basic idea on bytebeat
 
 you have a `t` that keeps increamenting from 0, 1, 2, to u32::MAX.
